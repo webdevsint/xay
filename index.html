@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-grid.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-reboot.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xaydex</title>
+  </head>
+
+  <body>
+    <div class="errorbox">
+      <div class="errtxt">
+        <h5 class="err white-text text-wrap fs-1 m-4">
+          We couldn't find the page you were looking for! <br />
+          <br />
+          <ul style="list-style-type: none">
+            <li style="list-style-type: none" class="mx-4">
+              <b class="mx-3">•</b> There may be a possible error in the URL
+            </li>
+          </ul>
+          Please check your URL and try again as there might be an error in the
+          URL entered into your browser.
+        </h5>
+        <h6 class="mx-4 mb-5">
+          You can return to our homepage by clicking
+          <a href="home.html" style="text-decoration: underline">here</a>.
+        </h6>
+      </div>
+    </div>
+
+    <div class="loader-wrap" unselectable="on"></div>
+
+    <script>
+      $(window).load(function () {
+        $(".loader-wrap").fadeOut(1500, function () {
+          $(".loader-wrap").remove();
+        });
+      });
+    </script>
+
+    <style>
+      @font-face {
+        font-family: "pixel";
+        src: url("./assets/font.ttf");
+      }
+      .errorbox {
+        font-family: "pixel";
+      }
+    </style>
+  </body>
+</html>

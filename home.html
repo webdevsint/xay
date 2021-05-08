@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/folder.png"
+      type="image/x-icon"
+    />
+    <title>Desktop</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="js/main.js" defer></script>
+    <noscript
+      >this application does not work without javascript enabled!</noscript
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  </head>
+
+  <div class="unsupported">
+    this device is not comaptible with this application!
+    <a style="margin-left: 5px; text-decoration: solid" href="home.html"
+      >retry</a
+    >
+  </div>
+  <body style="overflow: hidden">
+    <div class="desktop">
+      <div class="icons-left">
+        <a
+          onclick="document.getElementById('window1').style.display = 'block';"
+        >
+          <div class="icon">
+            <center>
+              <img
+                src="./assets/images/folder.png"
+                alt="folder"
+                height="55px"
+                width="55px"
+                draggable="false"
+              />
+              <h5>my music</h5>
+            </center>
+          </div>
+        </a>
+        <a
+          onclick="document.getElementById('window2').style.display = 'block';"
+        >
+          <div class="icon">
+            <center>
+              <img
+                src="./assets/images/folder.png"
+                alt="folder"
+                height="55px"
+                width="55px"
+                draggable="false"
+              />
+              <h5>beats</h5>
+            </center>
+          </div></a
+        >
+        <a
+          onclick="document.getElementById('window3').style.display = 'block';"
+        >
+          <div class="icon">
+            <center>
+              <img
+                src="./assets/images/folder.png"
+                alt="folder"
+                height="55px"
+                width="55px"
+                draggable="false"
+              />
+              <h5>drum kits</h5>
+            </center>
+          </div></a
+        >
+        <a href="https://instagram.com/xaydex" target="_blank">
+          <div class="icon">
+            <center>
+              <img
+                src="./assets/images/instagram.png"
+                alt="folder"
+                height="55px"
+                width="55px"
+                draggable="false"
+              />
+              <h5>instagram</h5>
+            </center>
+          </div></a
+        >
+      </div>
+      <div class="icons-right">
+        <a
+          onclick="document.getElementById('window4').style.display = 'block';"
+        >
+          <div class="icon">
+            <center>
+              <img
+                src="./assets/images/folder.png"
+                alt="folder"
+                height="55px"
+                width="55px"
+                draggable="false"
+              />
+              <h5>furry porn</h5>
+            </center>
+          </div></a
+        >
+        <div class="icon">
+          <center>
+            <img
+              src="./assets/images/links.png"
+              alt="folder"
+              height="55px"
+              width="55px"
+              draggable="false"
+            />
+            <h5>links</h5>
+          </center>
+        </div>
+        <div class="icon">
+          <center>
+            <img
+              src="./assets/images/about.png"
+              alt="folder"
+              height="55px"
+              width="55px"
+              draggable="false"
+            />
+            <h5>about</h5>
+          </center>
+        </div>
+      </div>
+    </div>
+    <div id="corner">
+      <div
+        id="closecornerbox"
+        onclick="document.getElementById('corner').style.display = 'none';"
+      >
+        <i class="fas fa-times header-icon"></i>
+      </div>
+      <div class="cornerbox" id="cornerbox" onclick="alert('not now man')">
+        <p><center>system</center></p>
+      </div>
+    </div>
+
+    <div id="window1" style="display: none">
+      <div id="win1">
+        <div class="wincontainer">
+          <div class="window">
+            <div class="windowheader" id="win1header">
+              <div class="window-icon">
+                <i class="far fa-file header-icon"></i>
+              </div>
+              <div class="window-title"><h4>My Music</h4></div>
+              <a
+                onclick="document.getElementById('window1').style.display = 'none';"
+                ><div class="close-window-btn">
+                  <i class="fas fa-times header-icon"></i></div
+              ></a>
+            </div>
+            <div class="window-content">
+              <div class="sidebar">
+                <div class="sidebar-title">
+                  <center>
+                    <h5>File Explorer</h5>
+                  </center>
+                </div>
+                <div class="sidebar-links">
+                  <a>
+                    <div class="sidebarlink link-active">
+                      <img
+                        src=".././assets/images/folder.png"
+                        alt="folder"
+                        height="20px"
+                        width="20px"
+                      />
+                      <h5>my music</h5>
+                    </div>
+                  </a>
+                  <a
+                    onclick="document.getElementById('window1').style.display = 'none'; document.getElementById('window2').style.display = 'block';"
+                  >
+                    <div class="sidebarlink">
+                      <img
+                        src=".././assets/images/folder.png"
+                        alt="folder"
+                        height="20px"
+                        width="20px"
+                      />
+                      <h5>beats</h5>
+                    </div>
+                  </a>
+                  <a
+                    onclick="document.getElementById('window1').style.display = 'none'; document.getElementById('window3').style.display = 'block';"
+                  >
+                    <div class="sidebarlink">
+                      <img
+                        src=".././assets/images/folder.png"
+                        alt="folder"
+                        height="20px"
+                        width="20px"
+                      />
+                      <h5>drum kits</h5>
+                    </div>
+                  </a>
+                  <a
+                    onclick="document.getElementById('window1').style.display = 'none'; document.getElementById('window4').style.display = 'block';"
+                  >
+                    <div class="sidebarlink">
+                      <img
+                        src=".././assets/images/folder.png"
+                        alt="folder"
+                        height="20px"
+                        width="20px"
+                      />
+                      <h5>furry</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="maincontent">main stuff will go here</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="window2" style="display: none">
+      <div id="win2">
+        <div class="wincontainer">
+          <div class="window">
+            <div class="windowheader" id="win2header">
+              <div class="window-icon">
+                <i class="far fa-file header-icon"></i>
+              </div>
+              <div class="window-title"><h4>Beats</h4></div>
+              <a
+                onclick="document.getElementById('window2').style.display = 'none';"
+                ><div class="close-window-btn">
+                  <i class="fas fa-times header-icon"></i></div
+              ></a>
+            </div>
+            <div class="window-content">
+              <div class="sidebar">
+                <div class="sidebar-title">
+                  <center>
+                    <h5>File Explorer</h5>
+                  </center>
+                </div>
+                <div class="sidebar-links">
+                  <a
+                    onclick="document.getElementById('window2').style.display = 'none'; document.getElementById('window1').style.display = 'block';"
+                  >
+                    <div class="sidebarlink">
+                      <img
+                        src=".././assets/images/folder.png"
+                        alt="folder"
+                        height="20px"
+                        width="20px"
+                      />
+                      <h5>my music</h5>
+                    </div>
+                  </a>
+                  <a>
+                    <div class="sidebarlink link-active">
+                      <img
+                        src=".././assets/images/folder.png"
+                        alt="folder"
+                        height="20px"
+                        width="20px"
+                      />
+                      <h5>beats</h5>
+                    </div>
+                  </a>
+                  <a
+                    onclick="document.getElementById('window2').style.display = 'none'; document.getElementById('window3').style.display = 'block';"
+                  >
+                    <div class="sidebarlink">
+                      <img
+                        src=".././assets/images/folder.png"
+                        alt="folder"
+                        height="20px"
+                        width="20px"
+                      />
+                      <h5>drum kits</h5>
+                    </div>
+                  </a>
+                  <a
+                    onclick="document.getElementById('window2').style.display = 'none'; document.getElementById('window4').style.display = 'block';"
+                  >
+                    <div class="sidebarlink">
+                      <img
+                        src=".././assets/images/folder.png"
+                        alt="folder"
+                        height="20px"
+                        width="20px"
+                      />
+                      <h5>furry</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="maincontent">main stuff will go here</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="window3" style="display: none">
+      <div id="win3">
+        <div class="wincontainer">
+          <div class="window">
+            <div class="windowheader" id="win3header">
+              <div class="window-icon">
+                <i class="far fa-file header-icon"></i>
+              </div>
+              <div class="window-title"><h4>Drum Kits</h4></div>
+              <a
+                onclick="document.getElementById('window3').style.display = 'none';"
+                ><div class="close-window-btn">
+                  <i class="fas fa-times header-icon"></i></div
+              ></a>
+            </div>
+            <div class="window-content">
+              <div class="sidebar">
+                <div class="sidebar-title">
+                  <center>
+                    <h5>File Explorer</h5>
+                  </center>
+                </div>
+                <div class="sidebar-links">
+                  <a
+                    onclick="document.getElementById('window3').style.display = 'none'; document.getElementById('window1').style.display = 'block';"
+                  >
+                    <div class="sidebarlink">
+                      <img
+                        src=".././assets/images/folder.png"
+                        alt="folder"
+                        height="20px"
+                        width="20px"
+                      />
+                      <h5>my music</h5>
+                    </div>
+                  </a>
+                  <a
+                    onclick="document.getElementById('window3').style.display = 'none'; document.getElementById('window2').style.display = 'block';"
+                  >
+                    <div class="sidebarlink">
+                      <img
+                        src=".././assets/images/folder.png"
+                        alt="folder"
+                        height="20px"
+                        width="20px"
+                      />
+                      <h5>beats</h5>
+                    </div>
+                  </a>
+                  <a>
+                    <div class="sidebarlink link-active">
+                      <img
+                        src=".././assets/images/folder.png"
+                        alt="folder"
+                        height="20px"
+                        width="20px"
+                      />
+                      <h5>drum kits</h5>
+                    </div>
+                  </a>
+                  <a
+                    onclick="document.getElementById('window3').style.display = 'none'; document.getElementById('window4').style.display = 'block';"
+                  >
+                    <div class="sidebarlink">
+                      <img
+                        src=".././assets/images/folder.png"
+                        alt="folder"
+                        height="20px"
+                        width="20px"
+                      />
+                      <h5>furry</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="maincontent">main stuff will go here</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="window4" style="display: none">
+      <div id="win4">
+        <div class="wincontainer">
+          <div class="window">
+            <div class="windowheader" id="win4header">
+              <div class="window-icon">
+                <i class="far fa-file header-icon"></i>
+              </div>
+              <div class="window-title"><h4>Furry Porn</h4></div>
+              <a
+                onclick="document.getElementById('window4').style.display = 'none';"
+                ><div class="close-window-btn">
+                  <i class="fas fa-times header-icon"></i></div
+              ></a>
+            </div>
+            <div class="window-content">
+              <div class="sidebar">
+                <div class="sidebar-title">
+                  <center>
+                    <h5>File Explorer</h5>
+                  </center>
+                </div>
+                <div class="sidebar-links">
+                  <a
+                    onclick="document.getElementById('window4').style.display = 'none'; document.getElementById('window1').style.display = 'block';"
+                  >
+                    <div class="sidebarlink">
+                      <img
+                        src=".././assets/images/folder.png"
+                        alt="folder"
+                        height="20px"
+                        width="20px"
+                      />
+                      <h5>my music</h5>
+                    </div>
+                  </a>
+                  <a
+                    onclick="document.getElementById('window4').style.display = 'none'; document.getElementById('window2').style.display = 'block';"
+                  >
+                    <div class="sidebarlink">
+                      <img
+                        src=".././assets/images/folder.png"
+                        alt="folder"
+                        height="20px"
+                        width="20px"
+                      />
+                      <h5>beats</h5>
+                    </div>
+                  </a>
+                  <a
+                    onclick="document.getElementById('window4').style.display = 'none'; document.getElementById('window3').style.display = 'block';"
+                  >
+                    <div class="sidebarlink">
+                      <img
+                        src=".././assets/images/folder.png"
+                        alt="folder"
+                        height="20px"
+                        width="20px"
+                      />
+                      <h5>drum kits</h5>
+                    </div>
+                  </a>
+                  <a>
+                    <div class="sidebarlink link-active">
+                      <img
+                        src=".././assets/images/folder.png"
+                        alt="folder"
+                        height="20px"
+                        width="20px"
+                      />
+                      <h5>furry</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="maincontent">main stuff will go here</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="taskbar">
+      <div class="tasks">
+        <a href="index.html">
+          <div class="task task-active"><center>xaydex</center></div>
+        </a>
+      </div>
+      <div
+        class="more"
+        onclick="document.getElementById('corner').style.display = 'block';"
+      >
+        <img src="./assets/images/up.png" height="20" width="20" />
+      </div>
+    </div>
+
+    <div class="loader-wrap" unselectable="on"></div>
+  </body>
+
+  <script>
+    $(document).ready(function () {
+      window.onload = function () {
+        $(".loader-wrap").fadeOut(1500, function () {
+          $(".loader-wrap").remove();
+        });
+      };
+    });
+  </script>
+</html>
