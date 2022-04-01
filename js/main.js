@@ -65,7 +65,7 @@ function drumsWindow() {
 
 function twitterWindow() {
   if (!desktop.classList.contains("twitterWindow")) {
-    new WinBox("xaylovesnishi - twitter", {
+    new WinBox("mirasakikun - twitter", {
       height: height,
       width: width,
       bottom: 6,
