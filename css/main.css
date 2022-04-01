@@ -1,8 +1,12 @@
-/* break point: 317px*/
+@import "./components/desktop.css";
+@import "./components/taskbar.css";
+@import "./components/winbox.css";
+
 @font-face {
   font-family: "pixel";
   src: url("../assets/font.ttf");
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -14,18 +18,27 @@
   -ms-user-select: none;
   user-select: none;
 }
+
 body {
-  background-color: black;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
+
+a {
+  color: #a9cbfd;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(89, 146, 233);
+}
+
 .loader-wrap {
-  background-image: url("https://i.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp");
+  background-image: url(../assets/loader.gif);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: white;
+  background-color: black;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -35,15 +48,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-.desktop {
-  display: flex;
-  background: url("../assets/images/bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 .errorbox {
-  background-color: rgb(12, 0, 0);
+  background-color: #180000;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -60,277 +66,7 @@ body {
   max-width: 685px;
   text-align: justify;
 }
-a {
-  color: #a9cbfd;
-  text-decoration: none;
-}
-a:hover {
-  color: rgb(89, 146, 233);
-}
-.icons-left,
-.icons-right {
-  transition: 0.3s;
-  height: calc(100vh - 35px);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-content: center;
-  margin: 0 50px 0 50px;
-}
 
-.icons-right {
-  margin-left: 0;
-}
-
-.icon {
-  transition: 0.1s;
-  padding: 0 20px 0 20px;
-  cursor: pointer;
-}
-
-.icon:hover {
-  background-color: rgba(255, 94, 0, 0.3);
-}
-
-.icons-right img {
-  padding: 10px 0;
-}
-#corner {
-  display: none;
-}
-#closecornerbox {
-  position: fixed;
-  bottom: 35px;
-  right: 90px;
-  background: rgb(43, 43, 43);
-  padding: 2px;
-  border-right: 1px solid rgb(107, 106, 106);
-  max-height: 44px;
-}
-#closecornerbox:hover {
-  background: rgb(255, 82, 82);
-}
-.cornerbox {
-  cursor: pointer;
-  position: fixed;
-  background: rgb(43, 43, 43);
-  color: white;
-  bottom: 35px;
-  right: 0;
-  height: 44px;
-  width: 90px;
-  font-size: small;
-  max-height: 44px;
-}
-.cornerbox p {
-  margin: 12px 0;
-}
-.cornerbox:hover {
-  background: rgb(63, 63, 63);
-}
-.taskbar {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  height: 35px;
-  background-color: rgb(29, 29, 29);
-  width: 100vw;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-}
-.tasks {
-  display: flex;
-}
-.task {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 5px 10px;
-  max-width: 110px;
-}
-.task-active {
-  background-color: rgba(145, 145, 145, 0.5);
-}
-.task:hover {
-  background-color: rgba(145, 145, 145, 0.7);
-}
-
-.more {
-  padding: 0 5px;
-}
-
-.more:hover {
-  background-color: rgba(145, 145, 145, 0.7);
-}
-
-.window-content {
-  border-top: none;
-  height: auto;
-  display: flex;
-  background: white;
-}
-.windowheader {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  background: cornflowerblue;
-  height: 40px;
-  padding: 10px;
-}
-#win1,
-#win2,
-#win3,
-#win4 {
-  position: absolute;
-  height: calc(100vh - 2px);
-  width: calc(100vw - 2px);
-  background-color: #f1f1f1;
-  text-align: center;
-  border: 1px solid #d3d3d3;
-  resize: both;
-  overflow: hidden;
-  -webkit-box-shadow: 0 6px 6px -6px #777;
-  -moz-box-shadow: 0 6px 6px -6px #777;
-  box-shadow: 0 6px 6px -6px #777;
-}
-
-#win1header,
-#win2header,
-#win3header,
-#win4header {
-  padding: 10px;
-  cursor: move;
-  z-index: 10;
-  background-color: #ff5858;
-  color: #fff;
-}
-.header-icon {
-  padding: 10px 10px;
-}
-.windowheader h4 {
-  padding-top: 8px;
-  color: rgb(255, 255, 255);
-}
-.close-window-btn {
-  padding: 0 5px;
-  cursor: pointer;
-}
-.close-window-btn:hover {
-  background: #f88a8a;
-}
-.sidebar {
-  min-width: 150px;
-  background: rgb(248, 248, 248);
-  width: 15%;
-  border-right: 1px solid rgba(116, 116, 116, 0.2);
-  color: black;
-  height: 100vh;
-}
-.sidebar-title {
-  height: 40px;
-  padding: 10px;
-  border-bottom: 1px solid rgba(116, 116, 116, 0.2);
-}
-.sidebar-title h5 {
-  margin-top: 10px;
-  color: black;
-}
-.sidebarlink {
-  cursor: pointer;
-  display: flex;
-  height: 30px;
-  padding: 10px;
-}
-.sidebarlink:hover {
-  background: #ff6363;
-}
-.link-active {
-  background: #ff7f7f;
-}
-.sidebarlink img {
-  padding-top: 5px;
-}
-.sidebarlink h5 {
-  padding: 5px 10px 0 10px;
-  color: black;
-}
-.maincontent {
-  color: black;
-  position: relative;
-}
 .unsupported {
   display: none;
-}
-@media screen and (max-width: 999px) {
-  #win1,
-  #win2,
-  #win3,
-  #win4 {
-    top: 0;
-    left: 0;
-    height: calc(100vh - 35px);
-  }
-}
-@media screen and (min-width: 1000px) {
-  #win1,
-  #win2,
-  #win3,
-  #win4 {
-    height: 50%;
-    width: calc(50% - 8px);
-    min-width: 375px;
-    min-height: 350px;
-  }
-  #win1 {
-    top: 8px;
-    left: 8px;
-  }
-  #win2 {
-    top: 12px;
-    left: 12px;
-  }
-  #win3 {
-    top: 16px;
-    left: 16px;
-  }
-  #win4 {
-    top: 20px;
-    left: 20px;
-  }
-}
-@media screen and (max-width: 410px) {
-  .icons-left,
-  .icons-right {
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 317px) {
-  .icons-left,
-  .icons-right {
-    margin: 0 auto;
-  }
-  .sidebar {
-    display: none;
-  }
-  .maincontent {
-    height: 100vh;
-  }
-}
-@media screen and (max-width: 256px) {
-  body {
-    background: white;
-  }
-  .desktop,
-  .taskbar,
-  .cornerbox,
-  #closecornerbox {
-    display: none;
-  }
-  .unsupported {
-    margin: 10px;
-    display: block;
-    color: black;
-  }
 }

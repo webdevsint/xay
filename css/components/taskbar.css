@@ -1,0 +1,75 @@
+.cornerbox {
+  cursor: pointer;
+  position: fixed;
+  background: rgb(43, 43, 43);
+  color: white;
+  bottom: 35px;
+  right: 0;
+  height: 44px;
+  width: 90px;
+  font-size: small;
+  max-height: 44px;
+  z-index: 99999;
+}
+.cornerbox p {
+  margin: 12px 0;
+}
+.cornerbox:hover {
+  background: rgb(63, 63, 63);
+}
+
+.taskbar {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 35px;
+  background-color: #1d1d1d;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+}
+.tasks {
+  display: flex;
+}
+.task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px 10px;
+  max-width: 110px;
+}
+.task-active {
+  background-color: rgba(145, 145, 145, 0.5);
+}
+.task:hover {
+  background-color: rgba(145, 145, 145, 0.7);
+}
+.more {
+  padding: 0 5px;
+  z-index: 999999;
+}
+.more:hover {
+  background-color: rgba(145, 145, 145, 0.7);
+}
+#corner {
+  display: none;
+  position: absolute;
+}
+#closecornerbox {
+  position: fixed;
+  bottom: 35px;
+  right: 90px;
+  background: rgb(43, 43, 43);
+  padding: 2px;
+  border-right: 1px solid rgb(107, 106, 106);
+  max-height: 44px;
+  z-index: 9999;
+}
+#closecornerbox:hover {
+  background: rgb(255, 82, 82);
+}
+.corner-close {
+  padding: 10px 10px;
+}

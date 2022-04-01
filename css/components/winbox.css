@@ -1,0 +1,37 @@
+.winbox {
+  background: #99af8d;
+  border-radius: 12px 12px 0 0;
+  box-shadow: none;
+  margin-bottom: 80;
+  width: 400px;
+}
+
+.winbox.max {
+  border-radius: 0;
+}
+
+.wb-body div {
+  /* the width of window border: */
+  /* margin: 4px; */
+  color: black;
+}
+.wb-icon {
+  padding: 0 10px;
+}
+.wb-title {
+  margin-top: 5px;
+  font-family: "pixel";
+}
+span.wb-full {
+  display: none;
+}
+
+.winbox.min {
+  background: #272727;
+  border-radius: 0;
+  margin-left: 95px;
+  margin-top: 36px;
+}
+.winbox.min:hover {
+  background: #333333;
+}
